@@ -1,4 +1,4 @@
-﻿# wisesleuth.com
+# wisesleuth.com
 
 **Wise Sleuth — a research club.** Gig work for senior citizens and for people coming out of prison: named people who dig — a company, a claim, a family history, a property, a public record — paid for the work under their own name, and the club's meetups to do it together. Always remote, all digital, an opinion never advice, for a fee. Built by Mark Nejmeh, 21 Sep 2026.
 
@@ -9,3 +9,6 @@ Runs on the [Gigapoo](https://gigapoo.com) engine (site key `wisesleuth`): the p
 - `profile.html?id=` — a member's record: name, face, town, what they can do, jobs delivered, events held, every review as written.
 
 Cloudflare Pages: preset None, build command blank, output `/`, branch `main`. Clean URLs: `/excons`, `/hardknocks`, `/seniors`, `/profile?id=`.
+
+
+**21 Sep 2026, index-1b:** icon-driven like Warrant Wire: nine doors with an icon and a line; every paragraph moved to about.html (one section per door). His call: the site is too wordy; keep it simple for wise people to do things for not-so-street-smart people.
