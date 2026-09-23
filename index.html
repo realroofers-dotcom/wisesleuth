@@ -1,12 +1,14 @@
-<!-- BUILT 2026-09-21 · wisesleuth index-1e · WISE SLEUTH: icon-driven, in New York subway signage. Nine station signs with route bullets; one flashing LOOK HERE bullet opens the questions people bring (each opens Request a sleuth with the topic picked). The look lives in /ws.css. Runs on the Gigapoo engine under its own key. -->
+<!-- BUILT 2026-09-23 · wisesleuth index-2a · WISE SLEUTH: street signs. Every door is a coloured plate with a stick figure on it and two or three words under it; every question people bring is a picture on a card. The drawings are in /ws-icons.js, sized and coloured in /ws.css. Runs on the Gigapoo engine under its own key. -->
 <!--
-   HIS CALL, 21 Sep 2026 (1d): "it is no longer icon driven. Everything you
-   added goes under a flashing icon LOOK HERE, then add back the other icons.
-   We need to convert sales and we need a proper trusted look. Icons based on
-   the NYC subway look; an original look."
-   So: black station signs, white Helvetica, coloured route bullets with a
-   letter (R S C J X W H T ?), one yellow flashing bullet (!) that opens the
-   wall of questions. 1c: the questions as index cards. 1b: nine doors.
+   HIS CALL, 23 Sep 2026 (2a): "I find the site too wordy. I think it needs to be
+   icon driven like street signs with stick figures."
+   So the sentences came off this page. Nine doors are now plates with stick
+   figures and a label; the sixteen questions are pictures; the route is four
+   pictures; the three rules are three pictures. What used to be written here is
+   on /about, one section per door. The words that stayed are the ones that make
+   the sale: what it is, what it costs, what you get back.
+   1d/1e before it: the NYC subway dress — black signs, white Helvetica, coloured
+   bullets, one flashing yellow alert that opens the wall of questions. Kept.
    Every link and script here is ABSOLUTE to gigapoo.com, because the page is
    served from wisesleuth.com too.
 -->
@@ -28,110 +30,124 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wise Sleuth — borrow a wise mind. All minds have value. Someone who has seen it all reads your situation, for a fee.">
 <meta name="twitter:description" content="Is the boss fair? Are they gaslighting me? Why wasn't I invited? Will the coach play me? Who is stealing? Bring the question; a sleuth who has seen it all tells you what they see. Opinion, never advice.">
-<link rel="stylesheet" href="/ws.css?v=1e">
+<link rel="stylesheet" href="/ws.css?v=2a">
 <style>
-.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:end;padding:8px 0 4px}
-@media(max-width:760px){.hero{grid-template-columns:1fr}}
-.hero h1{margin:26px 0 10px}
-.motto{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;font:700 22px/1 var(--sans);letter-spacing:-.01em;padding:10px 16px 10px 10px;border-radius:4px;margin:0 0 16px;max-width:none}
-.hero p{font-size:19px;margin:0 0 18px}
-.trust{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font:700 13px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
-.trust span{display:inline-flex;align-items:center;gap:6px}
-.trust i{width:10px;height:10px;border-radius:50%;background:var(--green);display:inline-block}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:26px;align-items:end;padding:6px 0 2px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:14px}}
+.hero h1{margin:24px 0 10px}
+.motto{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;font:700 22px/1 var(--sans);letter-spacing:-.01em;padding:10px 16px 10px 10px;border-radius:4px;margin:0 0 14px;max-width:none}
+.hero p{font-size:19px;margin:0 0 16px}
 </style>
 </head>
 <body>
+<script src="/ws-icons.js?v=2a"></script>
 <div class="wrap">
+
 <header class="sign">
   <a class="logo" href="/"><span class="bullet dark" style="--c:var(--yellow)">W</span>Wise <i>Sleuth</i></a>
-  <nav><a href="#look"><span class="bullet sm dark flash" style="--c:var(--yellow)">!</span>Look here</a><a href="#offered">The sleuths</a><a href="#events">The club</a><a href="/about">How it works</a><a class="go" href="#need">Request a sleuth</a></nav>
+  <nav>
+    <a href="#look"><span class="bullet sm dark flash" style="--c:var(--yellow)"><svg class="pict"><use href="#i-look"/></svg></span>Look here</a>
+    <a href="#offered"><span class="plate sm" style="--c:var(--green)"><svg class="pict"><use href="#i-sleuths"/></svg></span>Sleuths</a>
+    <a href="#events"><span class="plate sm" style="--c:var(--blue)"><svg class="pict"><use href="#i-club"/></svg></span>The club</a>
+    <a href="/about"><span class="plate sm" style="--c:var(--grey)"><svg class="pict"><use href="#i-how"/></svg></span>How it works</a>
+    <a class="go" href="#need">Request a sleuth</a>
+  </nav>
 </header>
 
-<section class="hero">
+<section class="hero" style="border:0">
   <div>
     <h1>Borrow a <em>wise mind.</em></h1>
     <p class="motto"><span class="bullet sm dark" style="--c:var(--yellow)">W</span>All minds have value.</p>
-    <p>Bring the question. Someone who has seen it all &mdash; a detective, an ex-con, forty years of reading people and paper, a lifetime of mysteries &mdash; reads your situation and tells you what they see. <b>Opinion, never advice.</b> Always remote. For a fee.</p>
+    <p>Bring the question. Someone who has seen it all reads your situation and tells you what they see. <b>Opinion, never advice. For a fee.</b></p>
   </div>
-  <div class="trust"><span><i></i>Real names, verified by telephone</span><span><i></i>Paid by card, held until delivered</span><span><i></i>Every review published as written</span></div>
+  <div class="trust">
+    <div><span class="plate sm" style="--c:#000"><svg class="pict"><use href="#i-id"/></svg></span>Real names, checked by telephone</div>
+    <div><span class="plate sm" style="--c:#000"><svg class="pict"><use href="#i-lock"/></svg></span>Your money held until delivered</div>
+    <div><span class="plate sm" style="--c:#000"><svg class="pict"><use href="#i-review"/></svg></span>Every review printed as written</div>
+  </div>
 </section>
 
-<!-- ═══ THE STATIONS ═══ -->
-<section class="doors">
-  <div class="k">Where to</div>
-  <div class="grid">
-    <button class="station look" id="lookbtn" type="button" aria-controls="look" aria-expanded="false">
-      <span class="bullet lg flash">!</span>
-      <span class="txt"><b>Look here</b><span>The questions people bring: the boss, the club, the coach, the business, the company, the marriage&hellip;</span></span>
-    </button>
-    <a class="station" style="--c:var(--red)" href="#need">
-      <span class="bullet lg">R</span>
-      <span class="txt"><b>Request a sleuth</b><span>Describe the scenario, name what you would pay, get bids.</span></span>
-    </a>
-    <a class="station" style="--c:var(--green)" href="#offered">
-      <span class="bullet lg">S</span>
-      <span class="txt"><b>The sleuths</b><span>By name, with a face, a town, and why they are good at this.</span></span>
-    </a>
-    <a class="station" style="--c:var(--blue)" href="#events">
-      <span class="bullet lg">C</span>
-      <span class="txt"><b>The club meets</b><span>Walks, coffees, library days, evenings to dig together. From $5.</span></span>
-    </a>
-    <a class="station" style="--c:var(--orange)" href="#sell">
-      <span class="bullet lg">J</span>
-      <span class="txt"><b>Join as a sleuth</b><span>Paid by the job, under your own name. Say why you are good at this.</span></span>
-    </a>
-    <a class="station" style="--c:var(--purple)" href="/excons">
-      <span class="bullet lg">X</span>
-      <span class="txt"><b>For ex-convicts</b><span>You can figure things out. That is the whole skill. Ex-cons have value.</span></span>
-    </a>
-    <a class="station" style="--c:var(--lime)" href="/seniors">
-      <span class="bullet lg dark">W</span>
-      <span class="txt"><b>Seniors with wisdom</b><span>Forty years of reading contracts is worth money. Your pace, your judgment.</span></span>
-    </a>
-    <a class="station" style="--c:var(--brown)" href="/hardknocks">
-      <span class="bullet lg">H</span>
-      <span class="txt"><b>Hard knocks</b><span>The no-bullshit page: what this is, what it is not, how the money moves.</span></span>
-    </a>
-    <a class="station" style="--c:var(--yellow)" href="/shirts">
-      <span class="bullet lg dark">T</span>
-      <span class="txt"><b>The shirt</b><span>Wise Sleuth on your chest. People who dig. $28, shipped.</span></span>
-    </a>
-    <a class="station" style="--c:var(--grey)" href="/about">
-      <span class="bullet lg">?</span>
-      <span class="txt"><b>How it works</b><span>The rules, the money, the club, in plain words.</span></span>
-    </a>
-  </div>
+<!-- ═══ THE FLASHING SIGN ═══ -->
+<section class="doors" style="border:0">
 
-  <!-- ═══ LOOK HERE: the questions people bring ═══ -->
+  <button class="lookbar flash" id="lookbtn" type="button" aria-controls="look" aria-expanded="false">
+    <span class="plate lg"><svg class="pict"><use href="#i-look"/></svg></span>
+    <span><b>Look here.</b><span>The questions people bring. Tap one.</span></span>
+    <span class="chev" aria-hidden="true">&#9662;</span>
+  </button>
+
+  <!-- ═══ THE QUESTIONS, AS PICTURES ═══ -->
   <div class="look-panel" id="look">
-    <div class="k"><span class="bullet sm dark" style="--c:var(--yellow)">!</span>What people bring us &mdash; tap one and the request opens with it</div>
+    <div class="k">Tap a picture &mdash; the request opens with it</div>
     <div class="qcards" id="cards">
-      <button class="q" data-topic="company" data-q="What is this company really up to?"><span class="bullet sm" style="--c:#0a0a0a">K</span><span><b>What is this company really up to?</b><em>filings, a name change, a reverse split, who is behind it</em></span></button>
-      <button class="q" data-topic="business" data-q="Who is stealing from me?"><span class="bullet sm" style="--c:var(--brown)">B</span><span><b>Who is stealing from me?</b><em>the till, the stock, the books</em></span></button>
-      <button class="q" data-topic="business" data-q="Why are sales up and profit down?"><span class="bullet sm" style="--c:var(--brown)">B</span><span><b>Why are sales up and profit down?</b><em>somebody knows. Find out who.</em></span></button>
-      <button class="q" data-topic="business" data-q="Wait — where are the tools disappearing to?"><span class="bullet sm" style="--c:var(--brown)">B</span><span><b>Wait &mdash; where are the tools disappearing to?</b><em>it is endless, until somebody looks</em></span></button>
-      <button class="q" data-topic="business" data-q="Which employee cannot be trusted?"><span class="bullet sm" style="--c:var(--brown)">B</span><span><b>Which employee cannot be trusted?</b><em>a second look at the people you rely on</em></span></button>
-      <button class="q" data-topic="work" data-q="Is the boss fair?"><span class="bullet sm" style="--c:var(--green)">W</span><span><b>Is the boss fair?</b><em>or is it just you, this time</em></span></button>
-      <button class="q" data-topic="gaslight" data-q="Are they gaslighting me?"><span class="bullet sm" style="--c:var(--red)">L</span><span><b>Are they gaslighting me?</b><em>lay it out; a stranger who has seen it will say</em></span></button>
-      <button class="q" data-topic="love" data-q="Should I marry them? Should I keep dating them?"><span class="bullet sm" style="--c:var(--red)">L</span><span><b>Should I marry them? Keep dating them?</b><em>the dilemma, read by someone with no stake in it</em></span></button>
-      <button class="q" data-topic="group" data-q="What is happening in the social club?"><span class="bullet sm" style="--c:var(--purple)">G</span><span><b>What is happening in the social club?</b><em>the politics you cannot see from inside</em></span></button>
-      <button class="q" data-topic="group" data-q="Wait — why wasn't I invited?"><span class="bullet sm" style="--c:var(--purple)">G</span><span><b>Wait &mdash; why wasn&rsquo;t I invited?</b><em>there is usually a reason. Sometimes a good one.</em></span></button>
-      <button class="q" data-topic="group" data-q="Is that group acting like a syndicate?"><span class="bullet sm" style="--c:var(--purple)">G</span><span><b>Is that group acting like a syndicate?</b><em>who decides, who benefits, who is kept out</em></span></button>
-      <button class="q" data-topic="chance" data-q="Will the coach play me?"><span class="bullet sm dark" style="--c:var(--yellow)">C</span><span><b>Will the coach play me?</b><em>read the signs before the season does</em></span></button>
-      <button class="q" data-topic="chance" data-q="Will I get the part?"><span class="bullet sm dark" style="--c:var(--yellow)">C</span><span><b>Will I get the part?</b><em>and what it would take</em></span></button>
-      <button class="q" data-topic="move" data-q="Should I stay with this team?"><span class="bullet sm" style="--c:var(--blue)">M</span><span><b>Should I stay with this team?</b><em>what staying costs; what leaving costs</em></span></button>
-      <button class="q" data-topic="move" data-q="Is New York for me? Where should I live?"><span class="bullet sm" style="--c:var(--blue)">M</span><span><b>Is New York for me? Where should I live?</b><em>from someone who has lived in a few places</em></span></button>
-      <button class="q own" data-topic="other" data-q=""><span class="bullet sm" style="--c:var(--grey)">?</span><span><b>My question is not on a card.</b><em>bring it anyway. Describe the scenario.</em></span></button>
+      <button class="q" data-topic="company"  data-q="What is this company really up to?"><span class="plate md" style="--c:#0a0a0a"><svg class="pict"><use href="#i-company"/></svg></span><b>What is this company up to?</b></button>
+      <button class="q" data-topic="business" data-q="Who is stealing from me?"><span class="plate md" style="--c:var(--brown)"><svg class="pict"><use href="#i-steal"/></svg></span><b>Who is stealing from me?</b></button>
+      <button class="q" data-topic="business" data-q="Why are sales up and profit down?"><span class="plate md" style="--c:var(--brown)"><svg class="pict"><use href="#i-profitdown"/></svg></span><b>Sales up, profit down?</b></button>
+      <button class="q" data-topic="business" data-q="Where are the tools disappearing to?"><span class="plate md" style="--c:var(--brown)"><svg class="pict"><use href="#i-tools"/></svg></span><b>Where are the tools going?</b></button>
+      <button class="q" data-topic="business" data-q="Which employee cannot be trusted?"><span class="plate md" style="--c:var(--brown)"><svg class="pict"><use href="#i-trust"/></svg></span><b>Which one can&rsquo;t be trusted?</b></button>
+      <button class="q" data-topic="work"     data-q="Is the boss fair?"><span class="plate md" style="--c:var(--green)"><svg class="pict"><use href="#i-boss"/></svg></span><b>Is the boss fair?</b></button>
+      <button class="q" data-topic="gaslight" data-q="Are they gaslighting me?"><span class="plate md" style="--c:var(--red)"><svg class="pict"><use href="#i-gaslight"/></svg></span><b>Are they gaslighting me?</b></button>
+      <button class="q" data-topic="love"     data-q="Should I marry them? Should I keep dating them?"><span class="plate md" style="--c:var(--red)"><svg class="pict"><use href="#i-love"/></svg></span><b>Should I marry them?</b></button>
+      <button class="q" data-topic="group"    data-q="What is happening in the social club?"><span class="plate md" style="--c:var(--purple)"><svg class="pict"><use href="#i-club"/></svg></span><b>What&rsquo;s going on in the club?</b></button>
+      <button class="q" data-topic="group"    data-q="Why wasn't I invited?"><span class="plate md" style="--c:var(--purple)"><svg class="pict"><use href="#i-outside"/></svg></span><b>Why wasn&rsquo;t I invited?</b></button>
+      <button class="q" data-topic="group"    data-q="Is that group acting like a syndicate?"><span class="plate md" style="--c:var(--purple)"><svg class="pict"><use href="#i-network"/></svg></span><b>Is that a syndicate?</b></button>
+      <button class="q" data-topic="chance"   data-q="Will the coach play me?"><span class="plate md dark" style="--c:var(--yellow)"><svg class="pict"><use href="#i-coach"/></svg></span><b>Will the coach play me?</b></button>
+      <button class="q" data-topic="chance"   data-q="Will I get the part?"><span class="plate md dark" style="--c:var(--yellow)"><svg class="pict"><use href="#i-star"/></svg></span><b>Will I get the part?</b></button>
+      <button class="q" data-topic="move"     data-q="Should I stay with this team?"><span class="plate md" style="--c:var(--blue)"><svg class="pict"><use href="#i-fork"/></svg></span><b>Should I stay on this team?</b></button>
+      <button class="q" data-topic="move"     data-q="Is New York for me? Where should I live?"><span class="plate md" style="--c:var(--blue)"><svg class="pict"><use href="#i-pin"/></svg></span><b>Where should I live?</b></button>
+      <button class="q own" data-topic="other" data-q=""><span class="plate md" style="--c:var(--grey)"><svg class="pict"><use href="#i-how"/></svg></span><b>Something else. Bring it.</b></button>
     </div>
   </div>
 
+  <!-- ═══ THE NINE DOORS ═══ -->
+  <div class="k">Where to</div>
+  <div class="grid">
+    <a class="station" style="--c:var(--red)" href="#need">
+      <span class="plate" style="--c:var(--red)"><svg class="pict"><use href="#i-request"/></svg></span>
+      <b>Request a sleuth</b><span class="sub">name your price</span>
+    </a>
+    <a class="station" style="--c:var(--green)" href="#offered">
+      <span class="plate" style="--c:var(--green)"><svg class="pict"><use href="#i-sleuths"/></svg></span>
+      <b>The sleuths</b><span class="sub">by name, with a face</span>
+    </a>
+    <a class="station" style="--c:var(--blue)" href="#events">
+      <span class="plate" style="--c:var(--blue)"><svg class="pict"><use href="#i-club"/></svg></span>
+      <b>The club meets</b><span class="sub">from $5</span>
+    </a>
+    <a class="station" style="--c:var(--orange)" href="#sell">
+      <span class="plate" style="--c:var(--orange)"><svg class="pict"><use href="#i-join"/></svg></span>
+      <b>Join as a sleuth</b><span class="sub">paid by the job</span>
+    </a>
+    <a class="station" style="--c:var(--purple)" href="/excons">
+      <span class="plate" style="--c:var(--purple)"><svg class="pict"><use href="#i-excons"/></svg></span>
+      <b>Ex-convicts</b><span class="sub">ex-cons have value</span>
+    </a>
+    <a class="station" style="--c:var(--lime)" href="/seniors">
+      <span class="plate dark" style="--c:var(--lime)"><svg class="pict"><use href="#i-seniors"/></svg></span>
+      <b>Seniors</b><span class="sub">your pace, your judgment</span>
+    </a>
+    <a class="station" style="--c:var(--brown)" href="/hardknocks">
+      <span class="plate" style="--c:var(--brown)"><svg class="pict"><use href="#i-hard"/></svg></span>
+      <b>Hard knocks</b><span class="sub">been through it</span>
+    </a>
+    <a class="station" style="--c:var(--yellow)" href="/shirts">
+      <span class="plate dark" style="--c:var(--yellow)"><svg class="pict"><use href="#i-shirt"/></svg></span>
+      <b>The shirt</b><span class="sub">$28, shipped</span>
+    </a>
+    <a class="station" style="--c:var(--grey)" href="/about">
+      <span class="plate" style="--c:var(--grey)"><svg class="pict"><use href="#i-how"/></svg></span>
+      <b>How it works</b><span class="sub">in plain words</span>
+    </a>
+  </div>
+
+  <!-- ═══ THE ROUTE ═══ -->
   <div class="route">
-    <div class="k">The route, question to answer</div>
+    <div class="k" style="margin:0 0 16px">Question to answer</div>
     <ol>
-      <li><i></i><b>Describe it</b><span>What happened, what you know, what you want found out. Name what you would pay.</span></li>
-      <li><i></i><b>Sleuths bid</b><span>Named people, with a face, a town, and why they are good at this.</span></li>
-      <li><i></i><b>Pick one, pay by card</b><span>The money is held until the work is delivered.</span></li>
-      <li><i></i><b>Read what they see</b><span>An opinion, never advice. Then review them, 140 characters.</span></li>
+      <li><span class="plate" style="--c:var(--orange)"><svg class="pict"><use href="#i-pencil"/></svg></span><b>Describe it</b><span>Name what you would pay.</span></li>
+      <li><span class="plate" style="--c:var(--green)"><svg class="pict"><use href="#i-handsup"/></svg></span><b>Sleuths bid</b><span>You pick one, or none.</span></li>
+      <li><span class="plate" style="--c:var(--blue)"><svg class="pict"><use href="#i-card"/></svg></span><b>Pay by card</b><span>Held until it is delivered.</span></li>
+      <li><span class="plate" style="--c:#000"><svg class="pict"><use href="#i-doc"/></svg></span><b>Read it</b><span>Then review them, 140 characters.</span></li>
     </ol>
   </div>
 </section>
@@ -139,29 +155,37 @@
 <script src="https://gigapoo.com/gigs.js" data-site="wisesleuth" data-profile="/profile?id=" data-scenario="1"></script>
 <div id="gigs"></div>
 
+<!-- ═══ THE THREE RULES ═══ -->
 <div class="board">
-  <div><span class="bullet sm" style="--c:var(--red)">1</span><div><b>Nobody is anonymous.</b>A name, a face, a telephone and a town on file. We telephone before the first job.</div></div>
-  <div><span class="bullet sm" style="--c:var(--green)">2</span><div><b>Nothing is free.</b>A gig has a price; an event costs at least $5. Free has no value here.</div></div>
-  <div><span class="bullet sm" style="--c:var(--blue)">3</span><div><b>Everyone is reviewed.</b>140 characters, as written, from everyone you dealt with. Your record; your value, seen.</div></div>
+  <div><span class="plate" style="--c:var(--red)"><svg class="pict"><use href="#i-id"/></svg></span><div><b>Nobody is anonymous.</b>A name, a face, a town. We telephone first.</div></div>
+  <div><span class="plate" style="--c:var(--green)"><svg class="pict"><use href="#i-dollar"/></svg></span><div><b>Nothing is free.</b>A gig has a price. An event costs $5 at least.</div></div>
+  <div><span class="plate" style="--c:var(--blue)"><svg class="pict"><use href="#i-review"/></svg></span><div><b>Everyone is reviewed.</b>140 characters, as written, both ways.</div></div>
 </div>
 
 <footer>
-  Wise Sleuth runs on the <a href="https://gigapoo.com">Gigapoo</a> engine &mdash; the same rules on every site that carries it; <a href="https://gigapoo.com/yoursite">put a market like this on your own site</a>. <b>702-544-2002</b> &middot; a person answers. <a href="/terms">Terms</a> &middot; seven-day money back. The short ways in: <a href="https://wslth.com">wslth.com</a> and <a href="https://wisesleuths.com">wisesleuths.com</a>. Built and run by <a href="https://warrantwire.com/about">Mark Nejmeh</a>.<br>
-  <span style="font-size:12px">Built 2026-09-21 &middot; wisesleuth index-1e</span>
+  <b>702-544-2002</b> &middot; a person answers. <a href="/terms">Terms</a> &middot; seven-day money back.<br>
+  Runs on the <a href="https://gigapoo.com">Gigapoo</a> engine &mdash; <a href="https://gigapoo.com/yoursite">put a market like this on your own site</a>. Short ways in: <a href="https://wslth.com">wslth.com</a>, <a href="https://wisesleuths.com">wisesleuths.com</a>. Built and run by <a href="https://warrantwire.com/about">Mark Nejmeh</a>.<br>
+  <span style="font-size:12px">Built 2026-09-23 &middot; wisesleuth index-2a</span>
 </footer>
 </div>
 <script>
 (function () {
   var panel = document.getElementById("look"), btn = document.getElementById("lookbtn");
-  function open(on) { panel.classList.toggle("on", on); btn.setAttribute("aria-expanded", on ? "true" : "false"); if (on) panel.scrollIntoView({ block: "start", behavior: "smooth" }); }
+  function open(on) {
+    panel.classList.toggle("on", on);
+    btn.setAttribute("aria-expanded", on ? "true" : "false");
+    btn.classList.toggle("flash", !on);
+    if (on) panel.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
   btn.addEventListener("click", function () { open(!panel.classList.contains("on")); });
   /* the header link and #look in the URL open it too */
   function fromHash() { if (location.hash === "#look") { open(true); } }
   window.addEventListener("hashchange", fromHash); fromHash();
-  /* a card opens Request a sleuth with the topic picked and the question in the line */
+  /* a picture opens Request a sleuth with the topic picked and the question in the line */
   document.getElementById("cards").addEventListener("click", function (e) {
     var b = e.target.closest(".q"); if (!b) return;
-    if (window.gigapoo && gigapoo.open) gigapoo.open("need", { topic: b.getAttribute("data-topic"), subject: b.getAttribute("data-q") }); else location.hash = "need";
+    if (window.gigapoo && gigapoo.open) gigapoo.open("need", { topic: b.getAttribute("data-topic"), subject: b.getAttribute("data-q") });
+    else location.hash = "need";
   });
 })();
 </script>

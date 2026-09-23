@@ -1,0 +1,42 @@
+<!-- BUILT 2026-09-23 · wisesleuth tools/icons-2a · THE PROOF SHEET: every stick figure in /ws-icons.js, drawn
+     big on a plate and small on a bullet, so a sign can be checked at the size it is actually used. Not linked
+     from the site; open /tools/icons.html when a new sign is drawn. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wise Sleuth — the signs</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/ws.css?v=2a">
+<style>
+.sheet{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin:20px 0 40px}
+.cell{border:2px solid #000;border-radius:8px;padding:14px 10px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.cell .row{display:flex;align-items:center;gap:10px}
+.cell code{font:700 12px var(--sans);letter-spacing:.04em}
+.big{width:120px;height:120px;border-radius:20px;padding:20px}
+</style>
+</head>
+<body>
+<script src="/ws-icons.js?v=2a"></script>
+<div class="wrap">
+<header class="sign"><a class="logo" href="/"><span class="bullet dark" style="--c:var(--yellow)">W</span>Wise <i>Sleuth</i></a><nav><a href="/">Home</a></nav></header>
+<h1>The signs.</h1>
+<p class="lede">Every stick figure, on a plate at 120px and 56px, and on a bullet at 34px &mdash; the three sizes the site uses.</p>
+<div class="sheet" id="sheet"></div>
+</div>
+<script>
+(function () {
+  var names = [].map.call(document.querySelectorAll(".ws-sprite symbol"), function (s) { return s.id.slice(2); });
+  document.getElementById("sheet").innerHTML = names.map(function (n) {
+    return '<div class="cell">' +
+      '<span class="plate big" style="--c:#0a0a0a"><svg class="pict"><use href="#i-' + n + '"/></svg></span>' +
+      '<span class="row">' +
+        '<span class="plate md" style="--c:var(--red)"><svg class="pict"><use href="#i-' + n + '"/></svg></span>' +
+        '<span class="bullet" style="--c:var(--blue)"><svg class="pict"><use href="#i-' + n + '"/></svg></span>' +
+      '</span><code>' + n + '</code></div>';
+  }).join("");
+})();
+</script>
+</body>
+</html>
